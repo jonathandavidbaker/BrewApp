@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="brewingModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="fermentable">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="ftype" Type="varchar" MaxLength="50" />
+    <Property Name="amount" Type="real" />
+    <Property Name="yield" Type="real" />
+    <Property Name="color" Type="real" />
+    <Property Name="add_after_boil" Type="bit" />
+    <Property Name="origin" Type="varchar" MaxLength="50" />
+    <Property Name="supplier" Type="varchar" MaxLength="50" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="coarse_fine_diff" Type="real" />
+    <Property Name="moisture" Type="real" />
+    <Property Name="diastatic_power" Type="real" />
+    <Property Name="protein" Type="real" />
+    <Property Name="max_in_batch" Type="real" />
+    <Property Name="recommend_mash" Type="bit" />
+    <Property Name="is_mashed" Type="bit" />
+    <Property Name="ibu_gal_per_lb" Type="real" />
+    <Property Name="display_unit" Type="smallint" />
+    <Property Name="display_scale" Type="smallint" />
+    <Property Name="deleted" Type="smallint" />
+    <Property Name="display" Type="smallint" />
+    <Property Name="folder" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="hop">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="alpha" Type="real" />
+    <Property Name="amount" Type="real" />
+    <Property Name="use" Type="varchar" MaxLength="50" />
+    <Property Name="time" Type="real" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="htype" Type="varchar" MaxLength="50" />
+    <Property Name="form" Type="varchar" MaxLength="50" />
+    <Property Name="beta" Type="real" />
+    <Property Name="hsi" Type="real" />
+    <Property Name="origin" Type="varchar" MaxLength="50" />
+    <Property Name="substitutes" Type="varchar(max)" />
+    <Property Name="humulene" Type="real" />
+    <Property Name="caryophyllene" Type="real" />
+    <Property Name="cohumulone" Type="real" />
+    <Property Name="myrcene" Type="real" />
+    <Property Name="display_unit" Type="smallint" />
+    <Property Name="display_scale" Type="smallint" />
+    <Property Name="deleted" Type="smallint" />
+    <Property Name="display" Type="smallint" />
+    <Property Name="folder" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="misc">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="mtype" Type="varchar" MaxLength="50" />
+    <Property Name="use" Type="varchar" MaxLength="50" />
+    <Property Name="time" Type="real" />
+    <Property Name="amount" Type="real" />
+    <Property Name="amount_is_weight" Type="bit" />
+    <Property Name="use_for" Type="bit" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="display_unit" Type="smallint" />
+    <Property Name="display_scale" Type="smallint" />
+    <Property Name="deleted" Type="smallint" />
+    <Property Name="display" Type="smallint" />
+    <Property Name="folder" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="style">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="s_type" Type="varchar" MaxLength="50" />
+    <Property Name="category" Type="varchar" MaxLength="50" />
+    <Property Name="category_number" Type="smallint" />
+    <Property Name="style_letter" Type="varchar" MaxLength="50" />
+    <Property Name="style_guide" Type="varchar" MaxLength="50" />
+    <Property Name="og_min" Type="real" />
+    <Property Name="og_max" Type="real" />
+    <Property Name="fg_min" Type="real" />
+    <Property Name="fg_max" Type="real" />
+    <Property Name="ibu_min" Type="real" />
+    <Property Name="ibu_max" Type="real" />
+    <Property Name="color_min" Type="real" />
+    <Property Name="color_max" Type="real" />
+    <Property Name="abv_min" Type="real" />
+    <Property Name="abv_max" Type="real" />
+    <Property Name="carb_min" Type="real" />
+    <Property Name="carb_max" Type="real" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="profile" Type="varchar(max)" />
+    <Property Name="ingredients" Type="varchar(max)" />
+    <Property Name="examples" Type="varchar(max)" />
+    <Property Name="deleted" Type="smallint" />
+    <Property Name="display" Type="smallint" />
+    <Property Name="folder" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="yeast">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar(max)" />
+    <Property Name="ytype" Type="varchar" MaxLength="50" />
+    <Property Name="form" Type="varchar" MaxLength="50" />
+    <Property Name="amount" Type="float" />
+    <Property Name="amount_is_weight" Type="varchar" MaxLength="50" />
+    <Property Name="laboratory" Type="varchar" MaxLength="50" />
+    <Property Name="product_id" Type="varchar" MaxLength="50" />
+    <Property Name="min_temperature" Type="float" />
+    <Property Name="max_temperature" Type="float" />
+    <Property Name="flocculation" Type="varchar" MaxLength="50" />
+    <Property Name="attenuation" Type="float" />
+    <Property Name="notes" Type="varchar(max)" />
+    <Property Name="best_for" Type="varchar(max)" />
+    <Property Name="times_cultured" Type="float" />
+    <Property Name="max_reuse" Type="float" />
+    <Property Name="add_to_secondary" Type="varchar" MaxLength="50" />
+    <Property Name="display_unit" Type="float" />
+    <Property Name="display_scale" Type="int" />
+    <Property Name="deleted" Type="int" />
+    <Property Name="display" Type="int" />
+    <Property Name="folder" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="brewingModelStoreContainer">
+    <EntitySet Name="fermentable" EntityType="Self.fermentable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="hop" EntityType="Self.hop" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="misc" EntityType="Self.misc" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="style" EntityType="Self.style" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="yeast" EntityType="Self.yeast" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

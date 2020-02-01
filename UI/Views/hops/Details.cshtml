@@ -1,0 +1,186 @@
+﻿@model DATA.hop
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>hop</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.alpha)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.alpha)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.use)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.use)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.htype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.htype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.form)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.form)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.beta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.beta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.hsi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.hsi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.origin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.origin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.substitutes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.substitutes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.humulene)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.humulene)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.caryophyllene)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.caryophyllene)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cohumulone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cohumulone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.myrcene)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.myrcene)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display_unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display_unit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display_scale)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display_scale)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.folder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.folder)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

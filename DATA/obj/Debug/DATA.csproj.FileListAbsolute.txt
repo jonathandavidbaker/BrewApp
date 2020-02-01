@@ -1,0 +1,10 @@
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\bin\Debug\DATA.dll.config
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\bin\Debug\DATA.dll
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\bin\Debug\DATA.pdb
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\bin\Debug\EntityFramework.dll
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\bin\Debug\EntityFramework.xml
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\obj\Debug\DATA.csprojResolveAssemblyReference.cache
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\obj\Debug\DATA.dll
+c:\users\student\documents\visual studio 2015\Projects\BrewApp\DATA\obj\Debug\DATA.pdb

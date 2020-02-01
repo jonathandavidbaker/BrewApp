@@ -1,0 +1,18 @@
+﻿@model UI.Models.RecipeViewModel
+    @{
+    ViewBag.Title = "RecipeTest";
+}
+
+<h2>RecipeTest</h2>
+@using (Html.BeginForm(null, null, FormMethod.Post))
+{
+    @Html.DropDownListFor(m => m.Yield, new SelectList(Model.MaltList, "yield", "name"), " ")
+    @Html.EditorFor(model => model.Pounds, new { htmlAttributes = new { placeholder = "Malt Amount (lbs.)" } })
+    <br />
+    @Html.EditorFor(model => model.Gallons, new { htmlAttributes = new { placeholder = "Batch Size (gallons)" } })
+    <br />
+    @Html.EditorFor(model => model.Efficiency, new { htmlAttributes = new { placeholder = "Efficiency (%)" } })
+    <br /><br />
+    <input type="submit" value="Calculate!">
+}
+

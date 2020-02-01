@@ -1,0 +1,153 @@
+﻿@model IEnumerable<DATA.yeast>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ytype)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.form)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount_is_weight)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.laboratory)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.product_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.min_temperature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.max_temperature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.flocculation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.attenuation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.best_for)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.times_cultured)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.max_reuse)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.add_to_secondary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display_unit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display_scale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.folder)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ytype)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.form)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount_is_weight)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.laboratory)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.product_id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.min_temperature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.max_temperature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.flocculation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.attenuation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.best_for)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.times_cultured)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.max_reuse)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.add_to_secondary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display_unit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display_scale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.folder)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

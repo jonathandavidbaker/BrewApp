@@ -1,0 +1,11 @@
+﻿@model UI.Models.RecipeViewModel
+@{
+    ViewBag.Title = "RecipeResults";
+}
+
+<h2>RecipeResults</h2>
+@*Malt: @Html.DisplayFor(model => model.Malt.name) <br />*@
+Amount: @Html.DisplayFor(model => model.Pounds) lbs. <br />
+Batch Size: @Html.DisplayFor(model => model.Gallons) gallons <br />
+Effiency: @Html.DisplayFor(model => model.Efficiency) %<br /><br />
+Estimated OG: @Html.DisplayFor(model => model.EstOG)

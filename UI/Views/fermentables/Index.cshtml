@@ -1,0 +1,159 @@
+﻿@model IEnumerable<DATA.fermentable>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ftype)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.yield)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.add_after_boil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.supplier)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.coarse_fine_diff)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.moisture)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.diastatic_power)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.protein)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.max_in_batch)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.recommend_mash)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.is_mashed)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ibu_gal_per_lb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display_unit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display_scale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.folder)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ftype)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.yield)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.add_after_boil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.supplier)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.coarse_fine_diff)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.moisture)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.diastatic_power)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.protein)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.max_in_batch)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.recommend_mash)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.is_mashed)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ibu_gal_per_lb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display_unit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display_scale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.folder)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,153 @@
+﻿@model IEnumerable<DATA.hop>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.alpha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.amount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.use)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.htype)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.form)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.beta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hsi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.origin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.substitutes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.humulene)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.caryophyllene)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cohumulone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.myrcene)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display_unit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display_scale)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.folder)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.alpha)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.amount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.use)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.htype)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.form)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.beta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hsi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.origin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.substitutes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.humulene)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.caryophyllene)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cohumulone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.myrcene)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display_unit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display_scale)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.folder)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

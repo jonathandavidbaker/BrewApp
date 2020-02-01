@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>ABV Calculator</h2>
+<label for="og">Original Gravity:</label>
+<input type="number" id="og" /><br />
+<label for="fg">Final Gravity:</label>
+<input type="number" id="fg" /><br />
+
+<input type="button" value="Calculate!" class="btn" onclick="calcABV()" /><br />
+<span id="abv"></span>
+
+<script>
+    function calcABV() {
+        let og = document.getElementById('og').value;
+        let fg = document.getElementById('fg').value;
+        let abv = document.getElementById('abv');
+
+        abv.textContent = 'The alcohol content by volume of your beer is ' + ((og - fg) * 131.25).toFixed(2) + '%';
+    }
+
+</script>

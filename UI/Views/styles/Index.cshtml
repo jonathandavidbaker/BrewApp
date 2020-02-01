@@ -1,0 +1,177 @@
+﻿@model IEnumerable<DATA.style>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.s_type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.category_number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.style_letter)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.style_guide)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.og_min)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.og_max)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fg_min)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fg_max)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ibu_min)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ibu_max)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.color_min)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.color_max)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.abv_min)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.abv_max)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.carb_min)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.carb_max)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.profile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ingredients)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.examples)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.deleted)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.display)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.folder)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.s_type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.category_number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.style_letter)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.style_guide)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.og_min)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.og_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fg_min)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fg_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ibu_min)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ibu_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.color_min)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.color_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.abv_min)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.abv_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.carb_min)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.carb_max)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.notes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.profile)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ingredients)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.examples)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.deleted)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.display)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.folder)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

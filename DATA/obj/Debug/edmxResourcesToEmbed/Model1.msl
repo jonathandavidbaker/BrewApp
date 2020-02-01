@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="brewingModelStoreContainer" CdmEntityContainer="brewingEntities">
+    <EntitySetMapping Name="fermentables">
+      <EntityTypeMapping TypeName="brewingModel.fermentable">
+        <MappingFragment StoreEntitySet="fermentable">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ftype" ColumnName="ftype" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="yield" ColumnName="yield" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="add_after_boil" ColumnName="add_after_boil" />
+          <ScalarProperty Name="origin" ColumnName="origin" />
+          <ScalarProperty Name="supplier" ColumnName="supplier" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="coarse_fine_diff" ColumnName="coarse_fine_diff" />
+          <ScalarProperty Name="moisture" ColumnName="moisture" />
+          <ScalarProperty Name="diastatic_power" ColumnName="diastatic_power" />
+          <ScalarProperty Name="protein" ColumnName="protein" />
+          <ScalarProperty Name="max_in_batch" ColumnName="max_in_batch" />
+          <ScalarProperty Name="recommend_mash" ColumnName="recommend_mash" />
+          <ScalarProperty Name="is_mashed" ColumnName="is_mashed" />
+          <ScalarProperty Name="ibu_gal_per_lb" ColumnName="ibu_gal_per_lb" />
+          <ScalarProperty Name="display_unit" ColumnName="display_unit" />
+          <ScalarProperty Name="display_scale" ColumnName="display_scale" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hops">
+      <EntityTypeMapping TypeName="brewingModel.hop">
+        <MappingFragment StoreEntitySet="hop">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="alpha" ColumnName="alpha" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="use" ColumnName="use" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="htype" ColumnName="htype" />
+          <ScalarProperty Name="form" ColumnName="form" />
+          <ScalarProperty Name="beta" ColumnName="beta" />
+          <ScalarProperty Name="hsi" ColumnName="hsi" />
+          <ScalarProperty Name="origin" ColumnName="origin" />
+          <ScalarProperty Name="substitutes" ColumnName="substitutes" />
+          <ScalarProperty Name="humulene" ColumnName="humulene" />
+          <ScalarProperty Name="caryophyllene" ColumnName="caryophyllene" />
+          <ScalarProperty Name="cohumulone" ColumnName="cohumulone" />
+          <ScalarProperty Name="myrcene" ColumnName="myrcene" />
+          <ScalarProperty Name="display_unit" ColumnName="display_unit" />
+          <ScalarProperty Name="display_scale" ColumnName="display_scale" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="miscs">
+      <EntityTypeMapping TypeName="brewingModel.misc">
+        <MappingFragment StoreEntitySet="misc">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="mtype" ColumnName="mtype" />
+          <ScalarProperty Name="use" ColumnName="use" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="amount_is_weight" ColumnName="amount_is_weight" />
+          <ScalarProperty Name="use_for" ColumnName="use_for" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="display_unit" ColumnName="display_unit" />
+          <ScalarProperty Name="display_scale" ColumnName="display_scale" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="styles">
+      <EntityTypeMapping TypeName="brewingModel.style">
+        <MappingFragment StoreEntitySet="style">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="s_type" ColumnName="s_type" />
+          <ScalarProperty Name="category" ColumnName="category" />
+          <ScalarProperty Name="category_number" ColumnName="category_number" />
+          <ScalarProperty Name="style_letter" ColumnName="style_letter" />
+          <ScalarProperty Name="style_guide" ColumnName="style_guide" />
+          <ScalarProperty Name="og_min" ColumnName="og_min" />
+          <ScalarProperty Name="og_max" ColumnName="og_max" />
+          <ScalarProperty Name="fg_min" ColumnName="fg_min" />
+          <ScalarProperty Name="fg_max" ColumnName="fg_max" />
+          <ScalarProperty Name="ibu_min" ColumnName="ibu_min" />
+          <ScalarProperty Name="ibu_max" ColumnName="ibu_max" />
+          <ScalarProperty Name="color_min" ColumnName="color_min" />
+          <ScalarProperty Name="color_max" ColumnName="color_max" />
+          <ScalarProperty Name="abv_min" ColumnName="abv_min" />
+          <ScalarProperty Name="abv_max" ColumnName="abv_max" />
+          <ScalarProperty Name="carb_min" ColumnName="carb_min" />
+          <ScalarProperty Name="carb_max" ColumnName="carb_max" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="profile" ColumnName="profile" />
+          <ScalarProperty Name="ingredients" ColumnName="ingredients" />
+          <ScalarProperty Name="examples" ColumnName="examples" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yeasts">
+      <EntityTypeMapping TypeName="brewingModel.yeast">
+        <MappingFragment StoreEntitySet="yeast">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ytype" ColumnName="ytype" />
+          <ScalarProperty Name="form" ColumnName="form" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="amount_is_weight" ColumnName="amount_is_weight" />
+          <ScalarProperty Name="laboratory" ColumnName="laboratory" />
+          <ScalarProperty Name="product_id" ColumnName="product_id" />
+          <ScalarProperty Name="min_temperature" ColumnName="min_temperature" />
+          <ScalarProperty Name="max_temperature" ColumnName="max_temperature" />
+          <ScalarProperty Name="flocculation" ColumnName="flocculation" />
+          <ScalarProperty Name="attenuation" ColumnName="attenuation" />
+          <ScalarProperty Name="notes" ColumnName="notes" />
+          <ScalarProperty Name="best_for" ColumnName="best_for" />
+          <ScalarProperty Name="times_cultured" ColumnName="times_cultured" />
+          <ScalarProperty Name="max_reuse" ColumnName="max_reuse" />
+          <ScalarProperty Name="add_to_secondary" ColumnName="add_to_secondary" />
+          <ScalarProperty Name="display_unit" ColumnName="display_unit" />
+          <ScalarProperty Name="display_scale" ColumnName="display_scale" />
+          <ScalarProperty Name="deleted" ColumnName="deleted" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="folder" ColumnName="folder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

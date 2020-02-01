@@ -1,0 +1,194 @@
+﻿@model DATA.fermentable
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>fermentable</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ftype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ftype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.yield)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.yield)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.color)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.add_after_boil)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.add_after_boil)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.origin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.origin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.supplier)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.supplier)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.coarse_fine_diff)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.coarse_fine_diff)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.moisture)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.moisture)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.diastatic_power)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.diastatic_power)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.protein)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.protein)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.max_in_batch)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.max_in_batch)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.recommend_mash)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.recommend_mash)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.is_mashed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.is_mashed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ibu_gal_per_lb)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ibu_gal_per_lb)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display_unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display_unit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display_scale)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display_scale)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.folder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.folder)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

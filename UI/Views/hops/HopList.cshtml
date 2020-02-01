@@ -1,0 +1,8 @@
+﻿@model UI.Models.HopViewModel
+
+@{
+    ViewBag.Title = "HopList";
+}
+
+<h2>HopList</h2>
+@Html.DropDownListFor(m => m.HopList, new SelectList(Model.HopList, "id", "name"), " ")

@@ -1,0 +1,186 @@
+﻿@model DATA.yeast
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>yeast</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ytype)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ytype)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.form)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.form)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.amount_is_weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.amount_is_weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.laboratory)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.laboratory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.product_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.product_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.min_temperature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.min_temperature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.max_temperature)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.max_temperature)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.flocculation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.flocculation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.attenuation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.attenuation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.notes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.best_for)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.best_for)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.times_cultured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.times_cultured)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.max_reuse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.max_reuse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.add_to_secondary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.add_to_secondary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display_unit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display_unit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display_scale)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display_scale)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.deleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.deleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.display)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.display)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.folder)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.folder)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

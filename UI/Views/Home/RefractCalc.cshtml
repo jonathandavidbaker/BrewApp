@@ -1,0 +1,13 @@
+﻿@model UI.Models.gravityViewModel
+@{
+    ViewBag.Title = "RefractCalc";
+}
+
+<h2>Refractometer Calculator</h2>
+@using (Html.BeginForm(null, null, FormMethod.Post))
+{
+    @Html.EditorFor(model => model.ogBrix, new { htmlAttributes = new { @placeholder = "Original RI (Brix)" } })
+    @Html.EditorFor(model => model.fgBrix, new { htmlAttributes = new { @placeholder = "Final RI (Brix)" } })
+    <input type="submit" value="Calculate!">
+}
+
